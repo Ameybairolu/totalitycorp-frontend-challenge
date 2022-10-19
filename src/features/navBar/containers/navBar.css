@@ -1,0 +1,7 @@
+.navBar__container {
+    width: 100%;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+}

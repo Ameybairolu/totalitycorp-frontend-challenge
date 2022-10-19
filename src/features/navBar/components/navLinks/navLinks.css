@@ -1,0 +1,125 @@
+/* Navigation Wrapper Styles */
+
+.navLinks__wrapper {
+    height: 2.8rem;
+    max-width: 980px;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.navLinks__wrapper.sideMenu__active {
+    height: 100vh;
+    background: rgba(0, 0, 0, 1);
+}
+
+/* Navigation List Style */
+
+.navLinks__list {
+    height: 2.8rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks__list > li {
+    display: inherit;
+}
+
+.navLinks__list li > a {
+    font-size: var(--small-font);
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    height: 100%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navLinks__list .apple-logo {
+    background-size: 13px 16px;
+    background-repeat: no-repeat;
+    background-image: url("../../../../assets/apple_logo_white.svg");
+    background-position: center center;
+}
+
+.navLinks__list .search-icon {
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-image: url("../../../../assets/search.svg");
+    background-position: center center;
+}
+
+.navLinks__list .bag-icon {
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-image: url("../../../../assets/nav_bag.svg");
+    background-position: center center;
+    position: relative;
+    transition: var(--transition);
+}
+
+.navLinks__list .apple-logo span,
+.navLinks__list .search-icon span,
+.navLinks__list .bag-icon span {
+    visibility: hidden;
+}
+
+.navLinks__wrapper hr {
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+/* Active Side Menu Styles */
+
+.sideMenu__list {
+    margin: 0px 3rem;
+}
+
+.sideMenu__list > li {
+    margin-top: 1rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+.sideMenu__list > li:last-of-type {
+    border: none;
+}
+
+.sideMenu__list li > a {
+    font-size: var(--medium-font);
+    font-weight: 200;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navLinks__list > li > a:hover,
+.sideMenu__list li > a:hover {
+    opacity: 1;
+}
+
+/* Hamburger Icon Styles */
+
+.hamburger .line {
+    width: 16px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+}
