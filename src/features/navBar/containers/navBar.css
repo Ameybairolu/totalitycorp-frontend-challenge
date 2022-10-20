@@ -1,4 +1,7 @@
 .navBar__container {
+    position: absolute;
+    top: 0%;
+    z-index: 99;
     width: 100%;
     height: fit-content;
     background: rgba(0, 0, 0, 0.8);
