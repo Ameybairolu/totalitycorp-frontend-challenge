@@ -9,11 +9,19 @@
 }
 
 :root {
+    --navbar-height: 2.8rem;
+
+    --navbar-max-width: 980px;
+
     --small-font: 12px;
+
+    --semi-medium-font: 15px;
 
     --medium-font: 18px;
 
-    --transition: all 400ms ease;
+    --transition-1: all 400ms ease;
+
+    --transition-2: all 0.5s ease-in-out;
 }
 
 body {
