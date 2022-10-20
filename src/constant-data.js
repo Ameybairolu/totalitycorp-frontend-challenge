@@ -10,3 +10,11 @@ export const navlinkData = [
     { index: 9, title: "Accessories" },
     { index: 10, title: "Support" }
 ];
+
+export const quickLinkData = [
+    { index: 1, title: "Visiting an Apple Store FAQ" },
+    { index: 2, title: "AirPods" },
+    { index: 3, title: "AirTag" },
+    { index: 4, title: "AppleCare+" },
+    { index: 5, title: "Gift Cards" }
+];
