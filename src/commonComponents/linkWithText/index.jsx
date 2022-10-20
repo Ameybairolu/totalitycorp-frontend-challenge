@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const NavOptions = ({ data }) => {
+const LinkWithText = ({ data }) => {
     return (
         <>
             {data.map((eachLink) => (
@@ -12,7 +12,7 @@ const NavOptions = ({ data }) => {
     );
 };
 
-NavOptions.propTypes = {
+LinkWithText.propTypes = {
     data: PropTypes.arrayOf(
         PropTypes.shape({
             index: PropTypes.number.isRequired,
@@ -21,4 +21,4 @@ NavOptions.propTypes = {
     ).isRequired
 };
 
-export default NavOptions;
+export default LinkWithText;
